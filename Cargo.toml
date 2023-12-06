@@ -1,0 +1,22 @@
+[workspace.package]
+name = "bevy_blueprints"
+description = "Macro's and trait's for building type-safe bevy Bundles and Components"
+version = "0.0.1"
+edition = "2021"
+authors = ["Caleb Yates <actuallyhappening42@gmail.com>"]
+
+[workspace]
+members = ["bevy_blueprints_macros"]
+
+[package]
+name = "bevy_blueprints"
+version = { workspace = true }
+description = { workspace = true }
+authors = { workspace = true }
+edition = { workspace = true }
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+bevy_blueprints_macros = { path = "bevy_blueprints_macros", version = "0.0.1" }
+cfg-if = "1.0.0"
