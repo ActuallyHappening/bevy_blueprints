@@ -1,5 +1,4 @@
 [workspace.package]
-name = "bevy_blueprints"
 description = "Macro's and trait's for building type-safe bevy Bundles and Components"
 version = "0.0.1"
 edition = "2021"
@@ -20,3 +19,5 @@ edition = { workspace = true }
 [dependencies]
 bevy_blueprints_macros = { path = "bevy_blueprints_macros", version = "0.0.1" }
 cfg-if = "1.0.0"
+bevy = "0.12"
+bevy_replicon = "0.17.0"
